@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "columns",
+  "info": {
+    "name": "column"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "tasks": {
+      "via": "column",
+      "collection": "task"
+    }
+  }
+}
