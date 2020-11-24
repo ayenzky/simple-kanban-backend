@@ -7,14 +7,14 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'bookshelf',
       settings: {
-        client: "postgres",
+        client: 'postgres',
         host: config.host,
         port: config.port,
         database: config.database,
         username: config.user,
         password: config.password,
-        charset: "utf8",
-        ssl: { "rejectUnauthorized": false }
+        charset: 'utf8',
+        ssl: { 'rejectUnauthorized': false }
       },
        options: {},
     },
